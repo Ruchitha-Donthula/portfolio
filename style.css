@@ -91,6 +91,51 @@ a:hover {
 .text-color-main:hover {
   transform: translateX(2px);
 }
+.text-color-secondary {
+  color: #00cdac;
+  font-size: 2.4rem;
+  font-weight: bold;
+  -webkit-text-fill-color: #00cdac;
+}
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .text-color-secondary {
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+@media (max-width: 37.5em) {
+  .text-color-secondary {
+    background-image: none;
+    -webkit-text-fill-color: #00cdac;
+  }
+}
+.text-color-secondary:hover {
+  transform: translateX(2px);
+}
+.text-color-ternary {
+  color: #00cdac;
+  font-weight: bold;
+  -webkit-text-fill-color: #00cdac;
+}
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .text-color-ternary {
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+@media (max-width: 37.5em) {
+  .text-color-ternary {
+    background-image: none;
+    -webkit-text-fill-color: #00cdac;
+  }
+}
+.text-color-ternary:hover {
+  transform: translateX(2px);
+}
 
 /* Call to Action Button */
 .cta-btn {
